@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
-import { Facebook, Instagram, Linkedin, MailIcon, MapPinIcon, PhoneIcon, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MailIcon, MapPinIcon, PhoneIcon, Youtube } from "lucide-react";
 
 
 function Footer() {
