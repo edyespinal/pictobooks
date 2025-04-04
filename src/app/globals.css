@@ -29,7 +29,7 @@
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Medium.ttf") format("opentype");
 }
 
-o @custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-diana: var(--diana);
