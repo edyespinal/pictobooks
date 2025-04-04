@@ -2,39 +2,39 @@
 @import "tw-animate-css";
 
 @font-face {
-  font-family: "Basis";
+  font-family: "BasisGrotesqueArabicPro";
   font-style: normal;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Regular.ttf") format("opentype");
 }
 
 @font-face {
-  font-family: "BasisGrotesqueArabicPro-Black";
+  font-family: "BasisGrotesqueArabicPro";
   font-style: black;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Black.ttf") format("opentype");
 }
 
 @font-face {
-  font-family: "BasisGrotesqueArabicPro-Bold";
+  font-family: "BasisGrotesqueArabicPro";
   font-style: bold;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Bold.ttf") format("opentype");
 }
 
 @font-face {
-  font-family: "BasisGrotesqueArabicPro-Medium";
+  font-family: "BasisGrotesqueArabicPro";
   font-style: medium;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Medium.ttf") format("opentype");
 }
 
-@custom-variant dark (&:is(.dark *));
+o @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-diana: var(--diana);
 
-  --font-primary: "Montserrat", sans-serif;
+  --font-primary: "BasisGrotesqueArabicPro", sans-serif;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
