@@ -4,13 +4,15 @@
 @font-face {
   font-family: "BasisGrotesqueArabicPro";
   font-style: normal;
+  font-weight: 400;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Regular.ttf") format("opentype");
 }
 
 @font-face {
-  font-family: "BasisGrotesqueArabicPro";
+  font-family: "BasisGrotesqueArabicPro-Black";
   font-style: black;
+  font-weight: 900;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Black.ttf") format("opentype");
 }
@@ -18,6 +20,7 @@
 @font-face {
   font-family: "BasisGrotesqueArabicPro";
   font-style: bold;
+  font-weight: 700;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Bold.ttf") format("opentype");
 }
@@ -25,14 +28,24 @@
 @font-face {
   font-family: "BasisGrotesqueArabicPro";
   font-style: medium;
+  font-weight: 500;
   font-display: swap;
   src: url("/assets/fonts/BasisGrotesqueArabicPro-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "BasisGrotesqueArabicPro";
+  font-style: light;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/BasisGrotesqueArabicPro-Light.ttf") format("opentype");
 }
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-diana: var(--diana);
+  --color-morado: var(--morado);
 
   --font-primary: "BasisGrotesqueArabicPro", sans-serif;
   --font-sans: var(--font-geist-sans);
@@ -77,6 +90,7 @@
 
 :root {
   --diana: hsl(0, 0%, 13%);
+  --morado: hsl(291, 29%, 51%);
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);

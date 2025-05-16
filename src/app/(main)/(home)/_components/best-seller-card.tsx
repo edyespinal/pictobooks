@@ -1,17 +1,20 @@
-import { cn } from "@/lib/utils"
-import Image from "next/image"
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 function BestSellerCard(props: {
-  imageSrc: string,
-  title: string,
-  price: number
-  tag: string
-  bgColor?: string
+  imageSrc: string;
+  title: string;
+  price: number;
+  tag: string;
+  bgColor?: string;
 }) {
   return (
     <div>
       <div
-        className={cn("overflow-hidden rounded-xl pt-6 pb-1 px-2", props.bgColor ? props.bgColor : "bg-orange-300")}
+        className={cn(
+          "relative overflow-hidden rounded-4xl px-12 pt-4 pb-12",
+          props.bgColor ? props.bgColor : "bg-orange-300",
+        )}
       >
         <div className="relative h-48 md:h-64">
           <Image
@@ -20,21 +23,18 @@ function BestSellerCard(props: {
             fill
             className="object-contain"
           />
-          <div className="absolute bottom-2 right-2 rounded bg-violet-500 px-2 py-1 text-white">
-            {props.tag}
-          </div>
+        </div>
+        <div className="bg-morado absolute right-8 bottom-4 rounded-lg px-2 py-1 text-white">
+          {props.tag}
         </div>
       </div>
+
       <div className="p-4">
-        <h3 className="text-sm font-bold md:text-base">
-          {props.title}
-        </h3>
-        <p className="text-sm text-gray-600">Desde $29.99</p>
+        <h3 className="text-lg font-medium md:text-2xl">{props.title}</h3>
+        <p className="text-lg text-gray-500">Desde $29.99</p>
       </div>
-
     </div>
-  )
-
+  );
 }
 
-export { BestSellerCard }
+export { BestSellerCard };
